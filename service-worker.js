@@ -2,7 +2,7 @@
  * Service Worker
  */
 
-const _version = 'v1';
+const _version = 'v2';
 const cacheName = 'v1';
 const cacheList = [
   '/images/1.jpg',
@@ -21,4 +21,7 @@ self.addEventListener('activate', event => {
 });
 self.addEventListener('fetch', event => {
   log('Fetch' + event.request.url);
+  if(event.request.url.indexOf('.jsp') != -1){
+    event.respondWith(fetch('images/2.jsp'))
+  }
 });
