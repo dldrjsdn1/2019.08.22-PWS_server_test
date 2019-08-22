@@ -15,10 +15,10 @@ const log = msg => {
 
 self.addEventListener('install', event => {
   log('INSTALL');
-})
+});
 self.addEventListener('activate', event => {
   log('Activate');
-})
+});
 self.addEventListener('fetch', event => {
   log('Fetch' + event.request.url);
 });
