@@ -22,6 +22,6 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   log('Fetch' + event.request.url);
   if(event.request.url.indexOf('.jsp') != -1){
-    event.respondWith(fetch('images/2.jsp'))
+    event.respondWith(fetch('/images/2.jsp'))
   }
 });
