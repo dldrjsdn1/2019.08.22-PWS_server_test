@@ -5,7 +5,7 @@
     images: [],
     imageArea: document.getElementById('image-area')
   };
-  
+
   /**
    * @description images에 있는 이미지들을 HTML에 생성하여 표시
    */
@@ -59,5 +59,8 @@
   }
 
   // TODO: 아래에 서비스워커 등록
-
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./service-worker.js').then(() => {console.log('Service Worker Registered');
+  });
+  }
 })();
