@@ -6,7 +6,7 @@ const _version = 'v8';
 const cacheName = 'v5';
 const cacheList = [
   '/',
-  '/manifest.json',
+  './manifest.json',
   '/scripts/app.js',
   '/styles/index.css',
   '/images/1.jpg',
