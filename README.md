@@ -1,7 +1,7 @@
 # Progressive Web App Example
 
-## Chapter 1
+## Chapter 2
 
-- PWA에 대한 기본 이론 학습
-- 예제 웹 서버 띄우기
-- 코드 분석
+- 서비스워커 등록하기
+- 서비스워커 생명주기
+- 브라우저 Fetch 가로채기
