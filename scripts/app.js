@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  let appServerPublicKey = 'BH4iYD_ZeWXqKboxBjlQJPrDw9fLmr3_qMOeNvqqbtWEesirLZ0_2zgK8eoP7EfXfF_I5k3iAkbBRDrdfQtxxDY';
+  let appServerPublicKey = 'BMODLrtqknftjdb6I5Wru6Lgf4PIVG0Xx7AjcASXORwM0Yo9hlFXpHg5XTl8-nQUjDilKlsBm0j6pZ6l1qQuw1E';
   let isSubscribed = false;
   let swRegist = null;
 
