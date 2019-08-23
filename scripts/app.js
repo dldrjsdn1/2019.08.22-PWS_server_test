@@ -1,8 +1,8 @@
 (function () {
   'use strict';
 
-  let appServerPublicKey = 'BONL83gwQ5TqcrC6UfQH2sWB0EDg09GqxFh5PbRg7TTl1iZQekisRNVLW_yn_SZvqWq0kKi75VSMBDLer-mRdZs';
-  let isSubscribed = false; 
+  let appServerPublicKey = 'BDzIALlCvxJyAlfGBQjoeUwVLmNewmMstG4KHXiOghf5ZdPT-5dQPXll9jliQFmJtSO4Scv5X6tGiaJ-gVM3Ii0';
+  let isSubscribed = false;
   let swRegist = null;
 
   function urlB64ToUint8Array(base64String) {
@@ -10,10 +10,10 @@
     const base64 = (base64String + padding)
       .replace(/\-/g, '+')
       .replace(/_/g, '/');
-  
+
     const rawData = window.atob(base64);
     const outputArray = new Uint8Array(rawData.length);
-  
+
     for (let i = 0; i < rawData.length; ++i) {
       outputArray[i] = rawData.charCodeAt(i);
     }
@@ -24,7 +24,7 @@
     images: [],
     imageArea: document.getElementById('image-area')
   };
-  
+
   /**
    * @description images에 있는 이미지들을 HTML에 생성하여 표시
    */
